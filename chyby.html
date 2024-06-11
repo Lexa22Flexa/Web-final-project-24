@@ -1,47 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hlášení chyb</title>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
-    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
-    <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hlášení chyb</title>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
+  <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/select2/dist/js/select2.min.js"></script>
+  <script src="node_modules/tinymce/tinymce.min.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Zimní dobrodružství</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="hlavni.html">Úvod</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="postavy.html">Postavy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="chyby.html">Hlášení chyb
-                    <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Výběr levelu</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="level1.html">Level 1</a>
-                  <a class="dropdown-item" href="level2.html">Level 2</a>
-                  <a class="dropdown-item" href="level3.html">Level 3</a>
-                  <a class="dropdown-item" href="level4.html">Level 4</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Zimní dobrodružství</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="hlavni.html">Úvod</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="postavy.html">Postavy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="chyby.html">Hlášení chyb
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Výběr levelu</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="level1.html">Level 1</a>
+              <a class="dropdown-item" href="level2.html">Level 2</a>
+              <a class="dropdown-item" href="level3.html">Level 3</a>
+              <a class="dropdown-item" href="level4.html">Level 4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="col-sm-4 offset-4">
+    <h1>Hlášení chyb</h1>
+
+    <div>
+      <h5>Vyberte typ chyby</h3>
+        <form class="my-3">
+          <select class="js-example-basic-multiple w-100" name="bugy" multiple="multiple" id="bugy" required>
+            <option value=" " disabled>vyberte typ bugu</option>
+            <option value="obrazky">špatné obrázky</option>
+            <option value="fyzika">fyzika nefyzikuje</option>
+            <option value="level">celý level nefuguje</option>
+            <option value="jine">jiné</option>
+          </select>
+        </form>
+    </div>
+
+    <div class="my-3">
+      <form class="form-floating my-3">
+        <input type="text" placeholder="email" id="email" class="form-control" name="email" required>
+        <label for="email">E-mail</label>
+      </form>
+
+      <form class="form-floating my-3">
+        <h5>Prosím, prosím, gatě nosím - rozepište Váš problém</h5>
+        <textarea id="rozpis" name="rozpis" rows="4" cols="50" class="p-5"></textarea>
+      </form>
+    </div>
+    <button type="submit" name="poslat-chybu" class="btn">Poslat</button>
+
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.js-example-basic-multiple').select2();
+    });
+  </script>
+
+  <script>tinymce.init({
+      selector: 'textarea',
+      plugins: 'a_tinymce_plugin',
+      a_plugin_option: true,
+      a_configuration_option: 400
+    });</script>
+
 </body>
+
 </html>
