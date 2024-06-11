@@ -1,45 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 3</title>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
-    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
-    <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 3</title>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
+  <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Zimní dobrodružství</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="hlavni.html">Úvod</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="postavy.html">Postavy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="chyby.html">Hlášení chyb</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Výběr levelu</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="level1.html">Level 1</a>
-                  <a class="dropdown-item" href="level2.html">Level 2</a>
-                  <a class="dropdown-item" href="level3.html">Level 3</a>
-                  <a class="dropdown-item" href="level4.html">Level 4</a>
-                </div>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Zimní dobrodružství</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="hlavni.html">Úvod</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="postavy.html">Postavy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chyby.html">Hlášení chyb</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Výběr levelu</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="level1.html">Level 1</a>
+              <a class="dropdown-item" href="level2.html">Level 2</a>
+              <a class="dropdown-item" href="level3.html">Level 3</a>
+              <a class="dropdown-item" href="level4.html">Level 4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mx-3 my-2">
+
+    <div class="row">
+      <div class="col-sm-7"> <!--doopravit - nebýt dement + sjednotit rozlišení obrázků-->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="obrazky/level3-obr1.jpg" alt="obrázek z 3. levelu" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="obrazky/level3-obr2.jpg" alt="obrázek z 3. levelu" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="" alt="New York" class="d-block w-100">
           </div>
         </div>
-      </nav>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <div class="col-sm-5">
+        <h1>Level 3</h1>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
