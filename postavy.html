@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postavy</title>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
-    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
-    <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postavy</title>
+  <link rel="shortcut icon" type="image/x-con" href="obrazky/skret.png" class="ikona">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
+  <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Zimní dobrodružství</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="hlavni.html">Úvod</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="postavy.html">Postavy
-                    <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="chyby.html">Hlášení chyb</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Výběr levelu</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="level1.html">Level 1</a>
-                  <a class="dropdown-item" href="level2.html">Level 2</a>
-                  <a class="dropdown-item" href="level3.html">Level 3</a>
-                  <a class="dropdown-item" href="level4.html">Level 4</a>
-                </div>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Zimní dobrodružství</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="hlavni.html">Úvod</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="postavy.html">Postavy
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chyby.html">Hlášení chyb</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Výběr levelu</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="level1.html">Level 1</a>
+              <a class="dropdown-item" href="level2.html">Level 2</a>
+              <a class="dropdown-item" href="level3.html">Level 3</a>
+              <a class="dropdown-item" href="level4.html">Level 4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="my-2 mx-5">
+    <h1 style="text-align: center;" class="my-3">Postavy</h1>
+
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col mb-3">
+        <div class="card h-100">
+          <img class="card-img-top" src="obrazky/skret.png" alt="happy trpaslík">
+          <div class="card-body">
+            <h4 class="card-title">Trpaslík</h4>
+            <p class="card-text">
+              ---
+            </p>
           </div>
         </div>
-      </nav>
+      </div>
+      <div class="col mb-3">
+        <div class="card h-100">
+          <img class="card-img-top" src="obrazky/skretvledu.png" alt="Trpaslík v ledu">
+          <div class="card-body">
+            <h4 class="card-title">Trpaslík v ledu</h4>
+            <p class="card-text">
+              ---
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card h-100">
+          <img class="card-img-top" src="obrazky/hrdina.png" alt="hrdinaa">
+          <div class="card-body">
+            <h4 class="card-title">Hrdina</h4>
+            <p class="card-text">
+              ---
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card h-100">
+          <img class="card-img-top" src="obrazky/zlyskret.png" alt="zloun">
+          <div class="card-body">
+            <h4 class="card-title">Zloun</h4>
+            <p class="card-text">
+              ---
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
 </body>
+
 </html>
