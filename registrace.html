@@ -45,3 +45,49 @@
           </div>
         </div>
       </nav>
+      <div class="container-fluid">
+        <div class="offset-4 col-4">
+            <form action>
+                <div class="mb-3 mt-3 form-floating">
+                    <input type="text" class="form-control" placeholder="First name" id="fname" name="fname">
+                    <label for="fname">Jméno:</label>
+                </div>
+                <div class="mb-3 mt-3 form-floating">
+                    <input type="text" class="form-control" placeholder="Last name" id="lname" name="lname">
+                    <label for="lname">Příjmení:</label>
+                </div>
+                <div class="mb-3 mt-3 form-floating">
+                    <input type="text" class="form-control" placeholder="Email" id="email" name="email">
+                    <label for="email">Email:</label>
+                </div>
+                <select class="js-example-basic-single" name="state">
+                    <option value="CZ">Česká Republika</option>
+                    <option value="SK">Slovenská Republika</option>
+                    <option value="PL">Polsko</option>
+                    <option value="DE">Německo</option>
+                    <option value="AU">Rakousko</option>
+                    <option value="UA">Ukrajina</option>
+                    <option value="UK">Spojené království</option>
+                    <option value="FR">Francie</option>
+                    <option value="IT">Itálie</option>
+                    <option value="BE">Belgie</option>
+                  </select>
+                  <script>
+                  
+                    $(document).ready(function() {
+                        $('.js-example-basic-single').select2();
+                    });
+                  </script>
+                <div class="mb-3 mt-3 form-floating">
+                    <input type="password" class="form-control" placeholder="Heslo" id="heslo" name="heslo" minlength="8">
+                    <label for="heslo">Heslo:</label>
+                </div>
+                <div class="mb-3 mt-3 form-floating">
+                    <input type="password" class="form-control" placeholder="Heslo" id="heslo" name="heslo" minlength="8">
+                    <label for="heslo">Heslo znova:</label>
+                </div>
+            </form>
+            <a class="btn btn-success" href="hlavni.html">Registrovat</a>
+        </div>
+    </div>
+</body>
