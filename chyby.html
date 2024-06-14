@@ -57,32 +57,33 @@
     <div class="col-sm-4 offset-4">
       <h1>Hlášení chyb</h1>
 
-      <div>
-        <h5>Vyberte typ chyby</h3>
-          <form class="my-3">
-            <select class="js-example-basic-multiple w-100" name="bugy" multiple="multiple" id="bugy" required>
+      <form class="my-3">
+        <div>
+          <h5>Vyberte typ chyby</h3>
+            <select class="js-example-basic-multiple" name="bugy" multiple="multiple" id="bugy" required>
               <option value=" " disabled>vyberte typ bugu</option>
               <option value="obrazky">špatné obrázky</option>
               <option value="fyzika">fyzika nefyzikuje</option>
               <option value="level">celý level nefuguje</option>
               <option value="jine">jiné</option>
             </select>
-          </form>
-      </div>
+        </div>
 
-      <div class="my-3">
-        <form class="form-floating my-3">
-          <input type="text" placeholder="email" id="email" class="form-control" name="email" required>
-          <label for="email">E-mail</label>
-        </form>
+        <div class="my-3">
+          <div class="form-floating my-3">
+            <input type="text" placeholder="email" id="email" class="form-control" name="email" required>
+            <label for="email">E-mail</label>
+          </div>
 
-        <form class="form-floating my-3">
-          <h5>Prosím, prosím, gatě nosím - rozepište Váš problém</h5>
-          <textarea id="rozpis" name="rozpis" rows="4" cols="50" class="p-5"></textarea>
-        </form>
-      </div>
-      <button type="submit" name="poslat-chybu" class="btn">Poslat</button>
-
+          <div class="form-floating my-3">
+            <h5>Prosím, prosím, gatě nosím - rozepište Váš problém</h5>
+            <textarea id="rozpis" name="rozpis" rows="4" cols="50" class="p-5"></textarea>
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <button type="submit" name="poslat-chybu" class="btn">Poslat</button>
+        </div>
+      </form>
     </div>
   </div>
 
