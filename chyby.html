@@ -50,6 +50,8 @@
             </div>
           </li>
         </ul>
+        <a class="btn btn-secondary my-2 my-sm-0 me-3" type="submit" href="registrace.html">Registrace</a>
+        <a class="btn btn-secondary my-2 my-sm-0" type="submit" href="prihlaseni.html">Přihlášení</a>
       </div>
     </div>
   </nav>
@@ -62,7 +64,6 @@
         <div>
           <h5>Vyberte typ chyby</h3>
             <select class="js-example-basic-multiple" name="bugy" multiple="multiple" id="bugy" required>
-              <option value=" " disabled>vyberte typ bugu</option>
               <option value="obrazky">špatné obrázky</option>
               <option value="fyzika">fyzika nefyzikuje</option>
               <option value="level">celý level nefuguje</option>
@@ -73,7 +74,7 @@
         <div class="my-3">
           <div class="form-floating my-3">
             <input type="text" placeholder="email" id="email" class="form-control" name="email" required>
-            <label for="email">E-mail</label>
+            <label for="email"><i class="fa-regular fa-envelope"></i> E-mail</label>
           </div>
 
           <div class="form-floating my-3">
@@ -102,9 +103,11 @@
     });</script>
 
   <footer class="bg-primary text-lg-start mt-4 footer">
-        <div class="container-fluid py-4">
-          <h4 class="pt-3 ps-4"><a href=" " target="_blank" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dokumentace</a></h4>
-        </div>
+    <div class="container-fluid py-4">
+      <h4 class="pt-3 ps-4"><a href=" " target="_blank"
+          class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dokumentace</a>
+      </h4>
+    </div>
   </footer>
 
 </body>
