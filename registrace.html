@@ -1,93 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Úvod</title>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
-    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
-    <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Úvod</title>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.cerulean.css" rel="stylesheet">
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
+  <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/select2/dist/js/select2.min.js"></script>
+  <script src="node_modules/tinymce/tinymce.min.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Zimní dobrodružství</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="hlavni.html">Úvod
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="postavy.html">Postavy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="chyby.html">Hlášení chyb</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Výběr levelu</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="level1.html">Level 1</a>
-                  <a class="dropdown-item" href="level2.html">Level 2</a>
-                  <a class="dropdown-item" href="level3.html">Level 3</a>
-                  <a class="dropdown-item" href="level4.html">Level 4</a>
-                </div>
-              </li>
-            </ul>
-            <a class="btn btn-secondary my-2 my-sm-0 me-3" type="submit" href="registrace.html">Registrace</a>
-            <a class="btn btn-secondary my-2 my-sm-0" type="submit" href="prihlaseni.html">Přihlášení</a>
-          </div>
-        </div>
-      </nav>
-      <div class="container-fluid">
-        <div class="offset-4 col-4">
-            <form action>
-                <div class="mb-3 mt-3 form-floating">
-                    <input type="text" class="form-control" placeholder="First name" id="fname" name="fname">
-                    <label for="fname">Jméno:</label>
-                </div>
-                <div class="mb-3 mt-3 form-floating">
-                    <input type="text" class="form-control" placeholder="Last name" id="lname" name="lname">
-                    <label for="lname">Příjmení:</label>
-                </div>
-                <div class="mb-3 mt-3 form-floating">
-                    <input type="text" class="form-control" placeholder="Email" id="email" name="email">
-                    <label for="email">Email:</label>
-                </div>
-                <select class="js-example-basic-single" name="state">
-                    <option value="CZ">Česká Republika</option>
-                    <option value="SK">Slovenská Republika</option>
-                    <option value="PL">Polsko</option>
-                    <option value="DE">Německo</option>
-                    <option value="AU">Rakousko</option>
-                    <option value="UA">Ukrajina</option>
-                    <option value="UK">Spojené království</option>
-                    <option value="FR">Francie</option>
-                    <option value="IT">Itálie</option>
-                    <option value="BE">Belgie</option>
-                  </select>
-                  <script>
-                  
-                    $(document).ready(function() {
-                        $('.js-example-basic-single').select2();
-                    });
-                  </script>
-                <div class="mb-3 mt-3 form-floating">
-                    <input type="password" class="form-control" placeholder="Heslo" id="heslo" name="heslo" minlength="8">
-                    <label for="heslo">Heslo:</label>
-                </div>
-                <div class="mb-3 mt-3 form-floating">
-                    <input type="password" class="form-control" placeholder="Heslo" id="heslo" name="heslo" minlength="8">
-                    <label for="heslo">Heslo znova:</label>
-                </div>
-            </form>
-            <a class="btn btn-success" href="hlavni.html">Registrovat</a>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Zimní dobrodružství</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="hlavni.html">Úvod
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="postavy.html">Postavy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chyby.html">Hlášení chyb</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Výběr levelu</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="level1.html">Level 1</a>
+              <a class="dropdown-item" href="level2.html">Level 2</a>
+              <a class="dropdown-item" href="level3.html">Level 3</a>
+              <a class="dropdown-item" href="level4.html">Level 4</a>
+            </div>
+          </li>
+        </ul>
+        <a class="btn btn-secondary my-2 my-sm-0 me-3" type="submit" href="registrace.html">Registrace</a>
+        <a class="btn btn-secondary my-2 my-sm-0" type="submit" href="prihlaseni.html">Přihlášení</a>
+      </div>
     </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="offset-4 col-4">
+      <form action>
+        <div class="mb-3 mt-3 form-floating">
+          <input type="text" class="form-control" placeholder="First name" id="fname" name="fname" required>
+          <label for="fname">Jméno:</label>
+        </div>
+        <div class="mb-3 mt-3 form-floating">
+          <input type="text" class="form-control" placeholder="Last name" id="lname" name="lname" required>
+          <label for="lname">Příjmení:</label>
+        </div>
+        <div class="mb-3 mt-3 form-floating">
+          <input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
+          <label for="email">Email:</label>
+        </div>
+        <select class="js-example-basic-single" name="state" required>
+          <option value=" " disabled>Vyberte stát, z kama pocházíte:</option>
+          <option value="CZ">Česká Republika</option>
+          <option value="SK">Slovenská Republika</option>
+          <option value="PL">Polsko</option>
+          <option value="DE">Německo</option>
+          <option value="AU">Rakousko</option>
+          <option value="UA">Ukrajina</option>
+          <option value="UK">Spojené království</option>
+          <option value="FR">Francie</option>
+          <option value="IT">Itálie</option>
+          <option value="BE">Belgie</option>
+        </select>
+        <script>
+
+          $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+          });
+        </script>
+
+        <div class="mb-3 mt-3 form-floating">
+          <input type="password" class="form-control" placeholder="Heslo" id="heslo" name="heslo" minlength="8" required>
+          <label for="heslo">Heslo:</label>
+        </div>
+        <div class="mb-3 mt-3 form-floating">
+          <input type="password" class="form-control" placeholder="Heslo" id="heslo" name="heslo" minlength="8" required>
+          <label for="heslo">Heslo znova:</label>
+        </div>
+        <a href="hlavni.html"><button type="submit" class="btn btn-success">Registrovat</button></a> <!--doupravit aby to actually dalo na tu stránku-->
+      </form>
+    </div>
+  </div>
 </body>
